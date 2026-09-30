@@ -1362,3 +1362,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-bright);
     transform: none;
   }
 }
+
+/* Align About paragraphs on wide screens; retain natural spacing on mobile. */
+@media (min-width: 901px) {
+  #about .about-copy > p {
+    text-align: justify;
+    text-align-last: left;
+    hyphens: manual;
+  }
+}
